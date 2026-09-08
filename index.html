@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ocupacional Consultoria &amp; Serviços — Contabilidade e Segurança do Trabalho em Marabá</title>
+<meta name="description" content="Contabilidade completa e Segurança e Saúde do Trabalho (PCMSO, PGR, LTCAT, ASO, Treinamentos NR) para empresas de Marabá e região. Sua empresa em dia com o fisco e com o eSocial.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#132029;
+  --petrol:#135C3D;
+  --petrol-deep:#0C3F29;
+  --amber:#F2A414;
+  --amber-soft:#FBE9C6;
+  --paper:#F8F7F3;
+  --card:#FFFFFF;
+  --steel:#5E7079;
+  --line:#E3E1D9;
+  --green:#1E8A5A;
+  --wa:#25D366;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{text-decoration:none;color:inherit}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+.mono{font-family:'IBM Plex Mono',monospace}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--petrol);display:inline-flex;align-items:center;gap:8px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--amber);display:inline-block}
+h1,h2,h3{font-family:'Archivo',sans-serif;line-height:1.12;letter-spacing:-.015em}
+h2{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:800;margin:.55rem 0 .8rem}
+.section{padding:84px 0}
+.section-head{max-width:640px;margin-bottom:44px}
+.section-head p{color:var(--steel);font-size:1.02rem}
+
+/* ============ HEADER ============ */
+header{position:sticky;top:0;z-index:50;background:rgba(248,247,243,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:11px}
+.brand-mark{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;position:relative;flex-shrink:0}
+.brand-mark svg{width:44px;height:44px;display:block}
+.brand-name{font-family:'Archivo',sans-serif;font-weight:800;font-size:1.02rem;letter-spacing:-.01em;line-height:1.1}
+.brand-name small{display:block;font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:.6rem;letter-spacing:.18em;color:var(--steel);text-transform:uppercase}
+.nav-links{display:flex;gap:30px;font-size:.9rem;font-weight:500;color:#3c4b54}
+.nav-links a:hover{color:var(--petrol)}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--petrol);color:#fff;font-weight:600;font-size:.88rem;padding:11px 20px;border-radius:100px;transition:.2s}
+.nav-cta:hover{background:var(--petrol-deep)}
+.nav-cta svg{width:16px;height:16px}
+@media(max-width:900px){.nav-links{display:none}}
+
+/* ============ HERO ============ */
+.hero{padding:76px 0 88px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,4.6vw,3.35rem);font-weight:900}
+.hero h1 em{font-style:normal;color:var(--petrol);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.32em;background:var(--amber-soft);z-index:-1}
+.hero-sub{margin:20px 0 30px;font-size:1.08rem;color:var(--steel);max-width:520px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:.95rem;padding:15px 26px;border-radius:100px;transition:.2s;cursor:pointer;border:none}
+.btn svg{width:19px;height:19px}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 24px rgba(37,211,102,.32)}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(37,211,102,.4)}
+.btn-ghost{background:transparent;color:var(--petrol);border:1.5px solid var(--petrol)}
+.btn-ghost:hover{background:var(--petrol);color:#fff}
+.hero-note{margin-top:18px;font-size:.82rem;color:var(--steel);display:flex;align-items:center;gap:8px}
+.hero-note svg{width:15px;height:15px;color:var(--green);flex-shrink:0}
+
+/* compliance card — assinatura */
+.audit-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 24px 60px rgba(14,58,67,.13);padding:26px 26px 22px;position:relative;transform:rotate(.6deg)}
+.audit-card::before{content:"";position:absolute;top:-9px;left:38px;width:76px;height:20px;background:var(--amber-soft);border:1px solid #eeddb4;border-radius:3px;opacity:.9;transform:rotate(-2deg)}
+.audit-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1.5px dashed var(--line);padding-bottom:13px;margin-bottom:15px}
+.audit-head strong{font-family:'Archivo',sans-serif;font-weight:800;font-size:.95rem}
+.audit-head span{font-family:'IBM Plex Mono',monospace;font-size:.66rem;color:var(--steel);letter-spacing:.08em}
+.audit-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #F0EFE9;font-size:.86rem}
+.audit-row:last-of-type{border-bottom:none}
+.audit-row .doc{display:flex;align-items:center;gap:10px;font-weight:500}
+.audit-row .doc .tag{font-family:'IBM Plex Mono',monospace;font-size:.62rem;font-weight:600;background:#EAF3EE;color:var(--petrol);padding:3px 7px;border-radius:4px;letter-spacing:.05em}
+.status{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:.65rem;font-weight:600;letter-spacing:.06em;color:var(--green)}
+.status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green)}
+.stamp{position:absolute;right:22px;bottom:-16px;background:#fff;border:2.5px solid var(--green);color:var(--green);font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:.68rem;letter-spacing:.16em;padding:9px 16px;border-radius:6px;transform:rotate(-5deg);box-shadow:0 10px 26px rgba(0,0,0,.1);background-image:radial-gradient(circle at 30% 20%, rgba(30,138,90,.06), transparent 60%)}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:52px}
+  .audit-card{transform:none;max-width:460px}
+}
+
+/* ============ TRUST BAR ============ */
+.trust{background:var(--petrol);color:#fff;padding:34px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.trust-item strong{font-family:'Archivo',sans-serif;font-size:1.9rem;font-weight:900;display:block;color:var(--amber)}
+.trust-item span{font-size:.8rem;opacity:.85}
+@media(max-width:760px){.trust-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ============ PILARES ============ */
+.pillars-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.pillar{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 32px;position:relative;overflow:hidden;transition:.25s}
+.pillar:hover{box-shadow:0 18px 48px rgba(14,58,67,.1);transform:translateY(-3px)}
+.pillar::before{content:"";position:absolute;top:0;left:0;right:0;height:4px}
+.pillar.contabil::before{background:var(--petrol)}
+.pillar.sst::before{background:var(--amber)}
+.pillar-icon{width:52px;height:52px;border-radius:13px;display:grid;place-items:center;margin-bottom:18px}
+.pillar.contabil .pillar-icon{background:#E7F1EB;color:var(--petrol)}
+.pillar.sst .pillar-icon{background:var(--amber-soft);color:#9a6a05}
+.pillar-icon svg{width:26px;height:26px}
+.pillar h3{font-size:1.35rem;font-weight:800;margin-bottom:8px}
+.pillar>p{color:var(--steel);font-size:.93rem;margin-bottom:20px}
+.svc-list{display:flex;flex-direction:column;gap:10px}
+.svc{display:flex;align-items:flex-start;gap:11px;font-size:.9rem;padding:10px 12px;border-radius:9px;background:var(--paper)}
+.svc .tag{font-family:'IBM Plex Mono',monospace;font-size:.6rem;font-weight:600;letter-spacing:.05em;padding:3px 7px;border-radius:4px;flex-shrink:0;margin-top:2px}
+.pillar.contabil .svc .tag{background:#E7F1EB;color:var(--petrol)}
+.pillar.sst .svc .tag{background:var(--amber-soft);color:#9a6a05}
+.svc div strong{display:block;font-weight:600;font-size:.9rem}
+.svc div span{color:var(--steel);font-size:.8rem}
+@media(max-width:860px){.pillars-grid{grid-template-columns:1fr}}
+
+/* ============ SEGMENTOS ============ */
+.seg{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.seg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.seg-card{border:1px solid var(--line);border-radius:12px;padding:24px 20px;background:var(--paper);transition:.2s}
+.seg-card:hover{border-color:var(--petrol)}
+.seg-card svg{width:26px;height:26px;color:var(--petrol);margin-bottom:12px}
+.seg-card strong{font-family:'Archivo',sans-serif;font-weight:700;font-size:.98rem;display:block;margin-bottom:5px}
+.seg-card span{font-size:.8rem;color:var(--steel)}
+@media(max-width:860px){.seg-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.seg-grid{grid-template-columns:1fr}}
+
+/* ============ PROCESSO ============ */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;position:relative}
+.step::before{counter-increment:step;content:counter(step,decimal-leading-zero);font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:.72rem;letter-spacing:.1em;color:var(--amber);background:var(--petrol);padding:5px 10px;border-radius:6px;position:absolute;top:-13px;left:24px}
+.step h3{font-size:1.05rem;font-weight:700;margin:8px 0 8px}
+.step p{font-size:.88rem;color:var(--steel)}
+@media(max-width:820px){.steps{grid-template-columns:1fr}}
+
+/* ============ DEPOIMENTO ============ */
+.quote-wrap{background:var(--petrol);border-radius:var(--radius);color:#fff;padding:52px 54px;display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;position:relative;overflow:hidden}
+.quote-wrap::after{content:"";position:absolute;right:-70px;top:-70px;width:240px;height:240px;border-radius:50%;border:34px solid rgba(242,164,20,.13)}
+.quote-mark{font-family:'Archivo',sans-serif;font-size:5rem;font-weight:900;color:var(--amber);line-height:.6;margin-top:14px}
+.quote-wrap blockquote{font-size:1.18rem;font-weight:500;line-height:1.55;position:relative;z-index:1}
+.quote-wrap cite{display:block;margin-top:16px;font-style:normal;font-size:.85rem;opacity:.8}
+@media(max-width:700px){.quote-wrap{grid-template-columns:1fr;padding:38px 30px}}
+
+/* ============ LOCALIZAÇÃO ============ */
+.loc-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:26px;align-items:stretch}
+.loc-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px 30px;display:flex;flex-direction:column;gap:20px}
+.loc-item{display:flex;gap:14px;align-items:flex-start}
+.loc-item svg{width:20px;height:20px;color:var(--petrol);flex-shrink:0;margin-top:3px}
+.loc-item strong{display:block;font-weight:600;font-size:.92rem;margin-bottom:2px}
+.loc-item span{color:var(--steel);font-size:.86rem;line-height:1.5}
+.loc-map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:340px;box-shadow:0 14px 40px rgba(19,92,61,.1)}
+.loc-map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.btn-dir{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:.88rem;color:var(--petrol);border:1.5px solid var(--petrol);padding:12px 22px;border-radius:100px;transition:.2s;margin-top:auto;align-self:flex-start}
+.btn-dir:hover{background:var(--petrol);color:#fff}
+.btn-dir svg{width:17px;height:17px}
+@media(max-width:820px){.loc-grid{grid-template-columns:1fr}.loc-map{min-height:280px}}
+
+/* ============ CTA FINAL ============ */
+.final{padding:90px 0;text-align:center}
+.final h2{font-size:clamp(1.9rem,4vw,2.7rem)}
+.final p{color:var(--steel);max-width:520px;margin:0 auto 32px}
+
+/* ============ FOOTER ============ */
+footer{background:var(--petrol-deep);color:#B9C7CC;padding:52px 0 30px;font-size:.86rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid h4{font-family:'Archivo',sans-serif;color:#fff;font-size:.95rem;margin-bottom:14px}
+.foot-grid a,.foot-grid p{display:block;margin-bottom:9px;color:#B9C7CC}
+.foot-grid a:hover{color:var(--amber)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.76rem;opacity:.7}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
+
+/* ============ WHATSAPP FLUTUANTE ============ */
+.wa-float{position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 30px rgba(37,211,102,.45);z-index:60;transition:.2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:31px;height:31px;fill:#fff}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+
+/* ============ MENU MOBILE ============ */
+.burger{display:none;background:none;border:none;cursor:pointer;padding:8px;margin-left:auto}
+.burger svg{width:26px;height:26px;color:var(--petrol);display:block}
+.mobile-menu{display:none;position:fixed;inset:72px 0 0 0;background:var(--paper);z-index:49;padding:28px 24px;flex-direction:column;gap:6px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:'Archivo',sans-serif;font-weight:700;font-size:1.2rem;padding:15px 6px;border-bottom:1px solid var(--line);color:var(--ink)}
+.mobile-menu .mm-cta{margin-top:22px;border-bottom:none;background:var(--wa);color:#fff;text-align:center;border-radius:100px;padding:16px;font-size:1.05rem;box-shadow:0 8px 24px rgba(37,211,102,.32)}
+body.menu-open{overflow:hidden}
+
+/* ============ AJUSTES MOBILE ============ */
+@media(max-width:900px){
+  .burger{display:block}
+  .nav-cta{display:none}
+}
+@media(max-width:640px){
+  .section{padding:56px 0}
+  .container{padding:0 18px}
+  .hero{padding:44px 0 60px;text-align:center}
+  .hero .eyebrow{justify-content:center}
+  .hero-sub{font-size:.98rem;margin:16px auto 24px}
+  .hero-note{justify-content:center}
+  .hero-ctas{flex-direction:column;align-items:stretch}
+  .hero-ctas .btn{justify-content:center;width:100%}
+  .audit-card{margin:0 auto}
+  .section-head{margin-bottom:32px;text-align:center;margin-left:auto;margin-right:auto}
+  .section-head .eyebrow{justify-content:center}
+  .eyebrow::before{display:none}
+  .steps{gap:30px}
+  .step{text-align:center}
+  .step::before{left:50%;transform:translateX(-50%)}
+  h2{font-size:1.55rem}
+  .eyebrow{font-size:.66rem}
+  .audit-card{padding:20px 16px 18px}
+  .audit-row{font-size:.78rem;gap:8px}
+  .audit-row .doc{gap:7px;flex:1;min-width:0}
+  .audit-row .doc .tag{font-size:.56rem;padding:2px 5px}
+  .status{font-size:.58rem;flex-shrink:0}
+  .stamp{font-size:.6rem;padding:7px 12px;right:14px}
+  .trust{padding:26px 0}
+  .trust-item strong{font-size:1.5rem}
+  .trust-item span{font-size:.72rem}
+  .pillar{padding:26px 20px}
+  .quote-wrap blockquote{font-size:1.02rem}
+  .quote-mark{display:none}
+  .final{padding:64px 0}
+  .final .btn{width:100%;justify-content:center;max-width:360px}
+  .loc-card{padding:24px 20px}
+  .btn-dir{width:100%;justify-content:center}
+  .wa-float{width:54px;height:54px;right:16px;bottom:16px}
+  .wa-float svg{width:28px;height:28px}
+  .foot-bottom{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs><g id="logo-s">
+<circle cx="631" cy="621" r="551" fill="#fff"/>
+    <g transform="translate(0.000000,1254.000000) scale(0.100000,-0.100000)">
+    <path d="M6100 11850 c-1991 -118 -3670 -1171 -4589 -2878 -846 -1571 -893
+-3526 -122 -5054 565 -1120 1496 -2037 2626 -2588 404 -196 822 -338 1273
+-429 804 -164 1576 -144 2387 60 245 62 542 169 815 294 125 57 291 144 320
+168 32 25 66 127 42 127 -4 0 -113 -53 -242 -118 -257 -129 -419 -196 -667
+-277 -1276 -418 -2682 -310 -3883 296 -624 315 -1119 711 -1265 1014 -52 107
+-66 169 -66 290 0 349 253 654 598 720 102 20 148 19 279 -4 249 -44 536 -179
+1014 -478 696 -434 959 -539 1430 -573 281 -20 596 20 863 110 749 254 1112
+888 917 1600 -11 41 -47 129 -79 195 -261 533 -857 928 -2081 1381 -96 35
+-191 71 -210 79 -19 8 -134 51 -255 96 -834 310 -1331 545 -1725 817 -685 471
+-1035 1104 -1057 1909 -18 635 171 1243 536 1728 498 660 1421 1145 2526 1329
+891 148 1769 67 2650 -244 291 -103 746 -327 937 -461 l27 -19 6 47 c3 27 7
+58 9 71 4 30 -22 49 -189 140 -335 181 -734 342 -1120 451 -130 36 -184 49
+-428 102 -349 75 -926 120 -1277 99z" fill="#0b5530"/>
+    <path d="M9196 11001 c4 -21 1 -39 -11 -57 -21 -33 -14 -42 110 -134 371 -275
+566 -493 646 -721 33 -95 34 -293 1 -399 -120 -382 -444 -593 -827 -537 -252
+36 -509 151 -1025 459 -374 224 -569 334 -678 384 -346 159 -609 218 -977 218
+-852 1 -1544 -424 -1712 -1051 -39 -147 -39 -366 0 -507 95 -342 343 -628 759
+-877 303 -181 655 -332 1353 -581 713 -253 1031 -374 1318 -502 988 -439 1605
+-962 1938 -1640 243 -496 302 -1013 183 -1594 -85 -417 -290 -843 -568 -1186
+-158 -193 -440 -445 -689 -615 -90 -61 -108 -77 -103 -94 3 -11 -2 -33 -10
+-49 -9 -17 -13 -32 -11 -35 8 -8 100 43 259 143 849 534 1560 1304 2014 2179
+521 1006 721 2135 578 3264 -160 1268 -780 2478 -1703 3325 -206 190 -498 426
+-526 426 -8 0 -92 54 -237 152 l-88 59 6 -30z" fill="#e21119"/>
+  </g>
+  </g></defs>
+</svg>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <a href="#" class="brand">
+      <div class="brand-mark">
+        <svg viewBox="61.4 51.4 1139.2 1139.2" role="img" aria-label="Logo Ocupacional"><use href="#logo-s"/></svg>
+      </div>
+      <div class="brand-name">Ocupacional<small>Consultoria &amp; Serviços</small></div>
+    </a>
+    <nav class="nav-links">
+      <a href="#contabil">Contabilidade</a>
+      <a href="#sst">Segurança do Trabalho</a>
+      <a href="#segmentos">Segmentos</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/5594991899494" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.3.4c-.1.1-.2.3-.1.5.1.2.6 1.1 1.4 1.8 1 .9 1.8 1.2 2.1 1.3.2.1.4.1.5-.1l.7-.9c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.1.1.7-.1 1.3z"/></svg>
+      Falar no WhatsApp
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <svg id="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="display:none"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="#contabil">Contabilidade</a>
+  <a href="#sst">Segurança do Trabalho</a>
+  <a href="#segmentos">Segmentos</a>
+  <a href="#processo">Como funciona</a>
+  <a href="#localizacao">Localização</a>
+  <a class="mm-cta" href="https://wa.me/5594991899494?text=Ol%C3%A1!%20Quero%20uma%20avalia%C3%A7%C3%A3o%20gratuita%20da%20situa%C3%A7%C3%A3o%20da%20minha%20empresa." target="_blank">Falar no WhatsApp</a>
+</nav>
+<script>
+(function(){
+  var burger=document.getElementById('burger'),
+      menu=document.getElementById('mobileMenu'),
+      iOpen=document.getElementById('icon-open'),
+      iClose=document.getElementById('icon-close');
+  function toggle(force){
+    var open=(typeof force==='boolean')?force:!menu.classList.contains('open');
+    menu.classList.toggle('open',open);
+    document.body.classList.toggle('menu-open',open);
+    burger.setAttribute('aria-expanded',open);
+    iOpen.style.display=open?'none':'block';
+    iClose.style.display=open?'block':'none';
+  }
+  burger.addEventListener('click',function(){toggle();});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){toggle(false);});});
+})();
+</script>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Marabá · Pará &nbsp;—&nbsp; Atendemos toda a região de Carajás</span>
+      <h1>Sua empresa em dia com o fisco <em>e com o eSocial.</em></h1>
+      <p class="hero-sub">Contabilidade completa e Segurança &amp; Saúde do Trabalho no mesmo lugar: PCMSO, PGR, LTCAT, ASO e treinamentos NR — sem multa, sem dor de cabeça e sem precisar contratar duas empresas.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/5594991899494?text=Ol%C3%A1!%20Quero%20uma%20avalia%C3%A7%C3%A3o%20gratuita%20da%20situa%C3%A7%C3%A3o%20da%20minha%20empresa." target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.3.4c-.1.1-.2.3-.1.5.1.2.6 1.1 1.4 1.8 1 .9 1.8 1.2 2.1 1.3.2.1.4.1.5-.1l.7-.9c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.1.1.7-.1 1.3z"/></svg>
+          Avaliação gratuita no WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#sst">Ver serviços</a>
+      </div>
+      <div class="hero-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        Resposta em horário comercial · Mais de 25 empresas atendidas na região
+      </div>
+    </div>
+
+    <!-- Cartão de conformidade (assinatura visual) -->
+    <div class="audit-card">
+      <div class="audit-head">
+        <strong>Situação da sua empresa</strong>
+        <span>AUDITORIA · 2026</span>
+      </div>
+      <div class="audit-row">
+        <span class="doc"><span class="tag">NR-07</span> PCMSO elaborado e assinado</span>
+        <span class="status">EM DIA</span>
+      </div>
+      <div class="audit-row">
+        <span class="doc"><span class="tag">NR-01</span> PGR atualizado</span>
+        <span class="status">EM DIA</span>
+      </div>
+      <div class="audit-row">
+        <span class="doc"><span class="tag">LTCAT</span> Laudo técnico das condições</span>
+        <span class="status">EM DIA</span>
+      </div>
+      <div class="audit-row">
+        <span class="doc"><span class="tag">ASO</span> Exames ocupacionais dos colaboradores</span>
+        <span class="status">EM DIA</span>
+      </div>
+      <div class="audit-row">
+        <span class="doc"><span class="tag">S-2240</span> Eventos SST enviados ao eSocial</span>
+        <span class="status">EM DIA</span>
+      </div>
+      <div class="audit-row">
+        <span class="doc"><span class="tag">FISCAL</span> Obrigações contábeis e tributárias</span>
+        <span class="status">EM DIA</span>
+      </div>
+      <div class="stamp">✓ EM CONFORMIDADE</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item"><strong>25+</strong><span>empresas atendidas</span></div>
+    <div class="trust-item"><strong>2</strong><span>áreas integradas: contábil + SST</span></div>
+    <div class="trust-item"><strong>100%</strong><span>documentos assinados por responsável habilitado</span></div>
+    <div class="trust-item"><strong>1</strong><span>único parceiro para toda a burocracia</span></div>
+  </div>
+</section>
+
+<!-- PILARES -->
+<section class="section" id="contabil">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">O que fazemos</span>
+      <h2>Duas frentes. Um único parceiro.</h2>
+      <p>A maioria das empresas contrata um contador de um lado e uma assessoria de SST do outro — e a informação se perde no meio. Aqui, as duas áreas conversam entre si.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <!-- CONTÁBIL -->
+      <div class="pillar contabil">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+        </div>
+        <h3>Contabilidade Empresarial</h3>
+        <p>Da abertura da empresa à entrega de todas as obrigações — sua contabilidade organizada e no prazo.</p>
+        <div class="svc-list">
+          <div class="svc"><span class="tag">CNPJ</span><div><strong>Abertura, alteração e baixa de empresas</strong><span>Enquadramento no regime tributário ideal</span></div></div>
+          <div class="svc"><span class="tag">FISCAL</span><div><strong>Escrituração contábil e fiscal</strong><span>Apuração de impostos e obrigações acessórias</span></div></div>
+          <div class="svc"><span class="tag">DP</span><div><strong>Departamento pessoal e folha</strong><span>Admissões, rescisões, férias e eSocial</span></div></div>
+          <div class="svc"><span class="tag">IRPF</span><div><strong>Imposto de renda PF e PJ</strong><span>Declarações completas, sem cair na malha fina</span></div></div>
+        </div>
+      </div>
+
+      <!-- SST -->
+      <div class="pillar sst" id="sst">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-5"/></svg>
+        </div>
+        <h3>Segurança &amp; Saúde do Trabalho</h3>
+        <p>Programas, laudos e treinamentos exigidos por lei — elaborados, assinados e enviados ao eSocial.</p>
+        <div class="svc-list">
+          <div class="svc"><span class="tag">NR-07</span><div><strong>PCMSO</strong><span>Programa de Controle Médico de Saúde Ocupacional</span></div></div>
+          <div class="svc"><span class="tag">NR-01</span><div><strong>PGR</strong><span>Programa de Gerenciamento de Riscos</span></div></div>
+          <div class="svc"><span class="tag">INSS</span><div><strong>LTCAT</strong><span>Laudo Técnico das Condições Ambientais do Trabalho</span></div></div>
+          <div class="svc"><span class="tag">ASO</span><div><strong>Exames ocupacionais</strong><span>Admissional, periódico, retorno e demissional</span></div></div>
+          <div class="svc"><span class="tag">NRs</span><div><strong>Treinamentos NR</strong><span>NR-05, NR-06, NR-10, NR-12, NR-35 e mais</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEGMENTOS -->
+<section class="section seg" id="segmentos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Quem atendemos</span>
+      <h2>Feito para a realidade das empresas da região.</h2>
+      <p>Marabá e região de Carajás têm exigências pesadas de SST. Conhecemos as normas que se aplicam ao seu segmento.</p>
+    </div>
+    <div class="seg-grid">
+      <div class="seg-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+        <strong>Construção civil</strong>
+        <span>PGR, treinamentos NR-18 e NR-35, ASO de obra</span>
+      </div>
+      <div class="seg-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M6 20V10l6-6 6 6v10M10 20v-4h4v4"/></svg>
+        <strong>Mineração e terceirizadas</strong>
+        <span>LTCAT, aposentadoria especial, exigências de contratantes</span>
+      </div>
+      <div class="seg-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16l-1.5 12a2 2 0 0 1-2 1.8h-9A2 2 0 0 1 5.5 19L4 7z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+        <strong>Comércio e serviços</strong>
+        <span>Contabilidade completa + programas SST simplificados</span>
+      </div>
+      <div class="seg-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a7 7 0 0 1 14 0v1"/></svg>
+        <strong>MEI e autônomos</strong>
+        <span>Formalização, imposto de renda e regularização</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="section" id="processo">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Do primeiro contato à conformidade total.</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Diagnóstico gratuito</h3>
+        <p>Você chama no WhatsApp, conta sobre a empresa e nós levantamos o que está pendente: documentos vencidos, obrigações em atraso, riscos de multa.</p>
+      </div>
+      <div class="step">
+        <h3>Plano de regularização</h3>
+        <p>Montamos um plano claro com o que precisa ser feito, prazos e investimento — sem surpresa e sem serviço empurrado.</p>
+      </div>
+      <div class="step">
+        <h3>Execução e acompanhamento</h3>
+        <p>Elaboramos os programas, agendamos exames, realizamos treinamentos e mantemos tudo atualizado, com envio ao eSocial dentro do prazo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTO -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="quote-wrap">
+      <div class="quote-mark">&ldquo;</div>
+      <div>
+        <blockquote>Antes eu tinha um contador e ainda precisava correr atrás de PCMSO em outro lugar. Hoje resolvo tudo com uma pessoa só — e nunca mais tomei susto com prazo do eSocial.</blockquote>
+        <cite>— Empresário do setor de construção, Marabá/PA <span class="mono" style="font-size:.7rem;opacity:.6">(depoimento ilustrativo para o protótipo)</span></cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section class="section seg" id="localizacao" style="border-bottom:none">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Onde estamos</span>
+      <h2>Visite nosso escritório em Marabá.</h2>
+      <p>Atendemos presencialmente com hora marcada — e a distância, por WhatsApp, para empresas de toda a região.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card">
+        <div class="loc-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><strong>Endereço</strong><span>Rua Cuiabá, Qd 56 Lt 25<br>Marabá — PA, CEP 68501-594</span></div>
+        </div>
+        <div class="loc-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><strong>Horário de atendimento</strong><span>Segunda a sexta · 08h às 18h<br>Sábado · 08h às 12h</span></div>
+        </div>
+        <div class="loc-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+          <div><strong>Telefone e WhatsApp</strong><span>(94) 99189-9494</span></div>
+        </div>
+        <div class="loc-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
+          <div><strong>E-mail</strong><span><a href="mailto:ocupacional.sst.rh@gmail.com" style="color:var(--petrol);font-weight:500;word-break:break-all">ocupacional.sst.rh@gmail.com</a></span></div>
+        </div>
+        <a class="btn-dir" href="https://www.google.com/maps/dir/?api=1&destination=-5.379463566871226,-49.123235061584516" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l4 8-4 12-4-12 4-8z" transform="rotate(45 12 12)"/></svg>
+          Traçar rota no Google Maps
+        </a>
+      </div>
+      <div class="loc-map">
+        <iframe src="https://maps.google.com/maps?q=-5.379463566871226,-49.123235061584516&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — Ocupacional Consultoria & Serviços, Marabá"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final">
+  <div class="container">
+    <span class="eyebrow" style="justify-content:center;display:inline-flex">Comece agora</span>
+    <h2>Quanto custa uma multa do<br>Ministério do Trabalho?</h2>
+    <p>Mais caro do que manter tudo em dia. Faça uma avaliação gratuita da situação da sua empresa e receba um diagnóstico direto no WhatsApp.</p>
+    <a class="btn btn-wa" href="https://wa.me/5594991899494?text=Ol%C3%A1!%20Quero%20uma%20avalia%C3%A7%C3%A3o%20gratuita%20da%20situa%C3%A7%C3%A3o%20da%20minha%20empresa." target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.3.4c-.1.1-.2.3-.1.5.1.2.6 1.1 1.4 1.8 1 .9 1.8 1.2 2.1 1.3.2.1.4.1.5-.1l.7-.9c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.1.1.7-.1 1.3z"/></svg>
+      Solicitar avaliação gratuita
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+          <svg viewBox="61.4 51.4 1139.2 1139.2" width="34" height="34" role="img" aria-label="Logo Ocupacional"><use href="#logo-s"/></svg>
+          <h4 style="margin-bottom:0">Ocupacional Consultoria &amp; Serviços</h4>
+        </div>
+        <p>Contabilidade e Segurança &amp; Saúde do Trabalho para empresas de Marabá e região de Carajás.</p>
+        <p class="mono" style="font-size:.72rem;opacity:.6">Documentos elaborados e assinados por profissionais habilitados.</p>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <a href="#contabil">Contabilidade empresarial</a>
+        <a href="#sst">PCMSO · PGR · LTCAT</a>
+        <a href="#sst">Exames ocupacionais (ASO)</a>
+        <a href="#sst">Treinamentos NR</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a href="tel:+5594991899494">(94) 99189-9494</a>
+        <a href="https://wa.me/5594991899494">WhatsApp</a>
+        <a href="mailto:ocupacional.sst.rh@gmail.com" style="word-break:break-all">ocupacional.sst.rh@gmail.com</a>
+        <p>Rua Cuiabá, Qd 56 Lt 25<br>Marabá — PA, 68501-594</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Ocupacional Consultoria &amp; Serviços</span>
+      <span class="mono">ocupacionalsst.com.br · protótipo de apresentação</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a class="wa-float" href="https://wa.me/5594991899494" target="_blank" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.3.4c-.1.1-.2.3-.1.5.1.2.6 1.1 1.4 1.8 1 .9 1.8 1.2 2.1 1.3.2.1.4.1.5-.1l.7-.9c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.1.1.7-.1 1.3z"/></svg>
+</a>
+
+</body>
+</html>
